@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/slyles.css">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <header class="header_navbar">
+        <ul>
+            <li class="navli"><a href="../index.html">Главная</a></li>
+            <li class="navli"><a href="articles.html">Статьи</a></li>
+            <li class="navli"><a href="catalog.html">Каталог</a></li>
+            <li class="navli"><a href="contacts.html">Контакты</a></li>
+            <li class="navli"><a href="gallery.html">Галерея</a></li>
+            <li class="navli"><a href="page-nav.html">Навигация</a></li>
+        </ul>
+    </header>
+    <main class="registratin-main">
+        <h1 class="registration-pagetitle">Регистрация:</h1>
+        <form class="registration_form" action="#" method="get" enctype="multipart/form-data">
+            <div class="registration_form_pieces">
+                <label for="username">Введите Ваше имя:</label><br>
+                <input id="username" type="text" name="username" placeholder="Фамилия Имя Отчество">
+            </div>
+            <div class="registration_form_pieces">
+                <p>Ваше фото</p>
+                <input type="file" name="foto">
+            </div>
+            <div class="registration_form_pieces">
+                <label for="useremail">Ваша электронная почта:</label><br>
+                <input id="useremail" type="email" name="useremail" placeholder="email">
+            </div>
+            <div class="registration_form_pieces">
+                <label for="password">Пароль:</label><br>
+                <input id="password" type="password" name="password" placeholder="Введите пароль">
+            </div>
+            <div class="registration_form_pieces">
+                <label for="webpage">Введите название сайта</label><br>
+                <input id="webpage" type="text" name="webpage" placeholder="Введите название сайта">
+            </div>
+            <div class="registration_form_pieces">
+                <label for="gender">Ваш пол:</label>
+                <p><input id="gender" checked type="radio" name="gender" value="man"> Мужской</p>
+                <p><input id="gender" type="radio" name="gender" value="women"> Женский</p>
+            </div>
+            <div class="registration_form_pieces">
+                <label for="kitchen">Выберите кухню:</label>
+                <p><input id="kitchen" type="checkbox" name="kitchen">Белорусская</p>
+                <p><input id="kitchen" type="checkbox" name="kitchen2">Итальянская</p>
+                <p><input id="kitchen" type="checkbox" name="kitchen3">Испанская</p>
+                <p><input id="kitchen" type="checkbox" name="kitchen3">Французская</p>
+                <p><input id="kitchen" type="checkbox" name="kitchen3">Грузинская</p>
+            </div>
+            <div class="registration_form_pieces">
+                <label for="yourself">Напишите о себе: </label><br>
+                <textarea name="yourabout" id="yourself" cols="30" rows="10"></textarea>
+            </div>
+            <div class="registration_form_pieces">
+                <label for="birthday">Дата Вашего рождения</label><br>
+                <input id="birthday" type="date" name="birthday">
+            </div>
+            <div class="registration_form_pieces">
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        &copy; Aleksei Mikhlai
+    </footer>
+</body>
+
+</html>
