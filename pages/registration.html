@@ -23,50 +23,50 @@
     <main class="registratin-main">
         <h1 class="registration-pagetitle">Регистрация:</h1>
         <form class="registration-pagecontent" action="#" method="get" enctype="multipart/form-data">
-            <div class="registration_pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <label for="username">Введите Ваше имя:</label>
                 <input id="username" type="text" name="username" placeholder="Фамилия Имя Отчество">
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <p>Ваше фото</p>
                 <input type="file" name="foto">
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <label for="useremail">Ваша электронная почта:</label>
                 <input id="useremail" type="email" name="useremail" placeholder="email">
             </div>
-            <div class="registration-pagecontent_pieces">
-                <label for="password">Пароль:</label>
-                <input id="password" type="password" name="password" placeholder="Введите пароль">
+            <div class="registration-pagecontent-pieces">
+                <label for="catchword">Пароль:</label>
+                <input id="catchword" type="password" name="password" placeholder="Введите пароль">
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <label for="webpage">Введите название сайта</label>
                 <input id="webpage" type="text" name="webpage" placeholder="Введите название сайта">
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <p>Ваш пол:</p>
-                <p><input checked type="radio" name="gender" value="man"> Мужской<br>
-                    <input type="radio" name="gender" value="women"> Женский
-                </p>
+                <input checked id="genmale" type="radio" name="gender" value="male"> <label
+                    for="genmale">Мужской</label>
+                <input id="genfemale" type="radio" name="gender" value="women"> <label for="genfemale">Женский</label>
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <p>Выберите кухню:</p>
-                <p><input type="checkbox" name="kitchen">Белорусская<br>
-                    <input type="checkbox" name="kitchen2">Итальянская<br>
-                    <input type="checkbox" name="kitchen3">Испанская<br>
-                    <input type="checkbox" name="kitchen3">Французская<br>
-                    <input type="checkbox" name="kitchen3">Грузинская
+                <p><input type="checkbox" id="check1" name="kitchen"><label for="check1">Белорусская</label><br>
+                    <input type="checkbox" id="check2" name="kitchen2"><label for="ckeck2">Итальянская</label><br>
+                    <input type="checkbox" id="check3" name="kitchen3"><label for="check3">Испанская</label><br>
+                    <input type="checkbox" id="check4" name="kitchen3"><label for="check4">Французская</label><br>
+                    <input type="checkbox" id="check5" name="kitchen3"><label for="check5">Грузинская</label>
                 </p>
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <label for="yourself">Напишите о себе: </label>
                 <textarea name="yourabout" id="yourself" cols="30" rows="10"></textarea>
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <label for="birthday">Дата Вашего рождения</label>
                 <input id="birthday" type="date" name="birthday">
             </div>
-            <div class="registration-pagecontent_pieces">
+            <div class="registration-pagecontent-pieces">
                 <button type="submit">Зарегистрироваться</button>
                 <button type="reset">Очистить форму</button>
             </div>
